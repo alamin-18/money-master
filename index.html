@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Master</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                comon: '#31A5AC',
+              }
+            }
+          }
+        }
+      </script>
+</head>
+<body>
+    <header class="mt-28 mb-11"><h1 class="text-5xl text-center font-bold text-comon">Money Master💰 </h1></header>
+    <main class="w-9/12 mx-auto">
+        <section class="grid grid-cols-2 gap-3" >
+            <div><img src="images/bg.png" alt=""></div>
+            <div class="bg-[#F8F8F8]">
+                <div class="flex justify-center items-center">
+                <div class="text-center">
+                    <h1 class="text-3xl font-semibold">Income</h1>
+                    <div class=" grid grid-cols-2 gap-0 mt-6 ">
+                        <div><h1 class="text-xl font-semibold">income:</h1></div>
+                        <div><input class="bg-[#DCDCDC] py-2 px-2 ml-5" type="number" placeholder="enter your income"></div>
+                    </div>
+                    <h1 class="text-4xl font-semibold mt-6">Expenses</h1>
+                    <div class=" grid grid-cols-2 gap-0 mt-6 ">
+                        <div><h1 class="text-xl font-semibold">Food:</h1></div>
+                        <div><input class="bg-[#DCDCDC] py-2 px-2 ml-5" type="number" placeholder="enter your food-cost"></div>
+                    </div>
+                    <div class=" grid grid-cols-2 gap-0 mt-6 ">
+                        <div><h1 class="text-xl font-semibold">Rent:</h1></div>
+                        <div><input class="bg-[#DCDCDC] py-2 px-2 ml-5" type="number" placeholder="enter your rent cost"></div>
+                    </div>
+                    <div class=" grid grid-cols-2 gap-0 mt-6 ">
+                        <div><h1 class="text-xl font-semibold">Clothes:</h1></div>
+                        <div><input class="bg-[#DCDCDC] py-2 px-2 ml-5" type="number" placeholder="enter your clothes cost"></div>
+                    </div>
+                    <button id="calculator" class="bg-[#59A5FF] px-12 py-3 text-xl font-semibold text-white mt-6 rounded ">Calculate</button>
+
+                    <h1 class="text-3xl font-semibold mt-6">Total Expenses:<span></span></h1>
+                    <h1 class="text-3xl font-semibold mt-6">Balance:<span></span></h1>
+
+                    <div class="mt-6">
+                        <div class=" flex justify-evenly items-center">
+                            <div><h1 class="text-xl font-semibold">Save:</h1></div>
+                            <div><input class="bg-[#DCDCDC] py-2 px-2 ml-5 " type="number" placeholder="saving amount"></div>
+                            <div>%</div>
+                            <div> <button class="bg-[#59A5FF] px-10 py-3 text-xl font-semibold text-white rounded ">save</button> </div>
+                        </div>
+                        <h1 class="text-3xl font-semibold mt-4">Saving Amount:<span></span></h1>
+                        <h1 class="text-3xl font-semibold mt-4">Remaining Balance:<span></span></h1>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
